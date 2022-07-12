@@ -9,6 +9,21 @@ scoop bucket add cudnn-versions https://github.com/shmishtopher/cudnn-versions
 ```
 
 You should be able to search for `cuDNN` distributions with `scoop search`.
+```
+❯ scoop search cuDNNv8.2
+Results from local buckets...
+
+Name                            Version Source         Binaries
+----                            ------- ------         --------
+cuDNNv8.2.0-CUDAv10.2-windows10 8.2.0   cudnn-versions
+cuDNNv8.2.0-CUDAv11.3-windows   8.2.0   cudnn-versions
+cuDNNv8.2.1-CUDAv10.2-windows10 8.2.1   cudnn-versions
+cuDNNv8.2.1-CUDAv11.3-windows   8.2.1   cudnn-versions
+cuDNNv8.2.2-CUDAv10.2-windows10 8.2.2   cudnn-versions
+cuDNNv8.2.2-CUDAv11.4-windows   8.2.2   cudnn-versions
+cuDNNv8.2.4-CUDAv10.2-windows10 8.2.4   cudnn-versions
+cuDNNv8.2.4-CUDAv11.4-windows   8.2.4   cudnn-versions
+```
 
 ## Version Triples
 Every `cuDNN` build is index by a target tripple that looks like `<CUDNN_VERSION>-<CUDA_VERSION>-<PLATFORM>`.
