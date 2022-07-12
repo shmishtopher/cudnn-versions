@@ -58,7 +58,7 @@ function Get-Archives {
 $archives = Get-Archives $root |
     Where-Object { $_ -NotIn $exclude } |
     Where-Object { $_ -NotLike "*rc.zip" } |
-    Where-Object { $_ -notlike "*old.zip" } |
+    Where-Object { $_ -NotLike "*old.zip" } |
     Where-Object { $_ -ne $null }
 
 
