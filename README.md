@@ -2,6 +2,14 @@
 
 We've all been there.  You're setting up a custom installation of Jax/Torch/TensorFlow and... Agh! The `cuDNN` version you installed doesn't match what your framework supports!  You hastily install a new cuDNN distribution and now you have missmatch with your `CUDA` toolkit, and a pretty big mess.  `cuDNN-versions` aims to ease some of this strain.  This repository provides a `scoop` bucket containing every `cuDNN` build, for every applicable `CUDA` version, so that you can easily search and install what you're looking for.
 
+## Usage
+This repo can be added like any other scoop bucket by running the following command.
+```
+scoop bucket add cudnn-versions https://github.com/shmishtopher/cudnn-versions
+```
+
+You should be able to search for `cuDNN` distributions with `scoop search`.
+
 ## Version Triples
 Every `cuDNN` build is index by a target tripple that looks like `<CUDNN_VERSION>-<CUDA_VERSION>-<PLATFORM>`.
 
