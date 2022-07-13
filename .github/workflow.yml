@@ -1,0 +1,25 @@
+name: Update Manifests
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  update-manifests:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository contents
+        uses: actions/checkout@v3
+
+      - name: Discover cuDNN verions
+        run: powershell discover-versions.ps1
+      
+      - name: Push changes to repository
+        run: |
+          git config --local user.email me@shmish.dev
+          git config --local user.name "Christopher K. 'Shmish' Schmitt"
+          git add .
+          git commit -m "Add new cuDNN manifest"
+          git push
+        
