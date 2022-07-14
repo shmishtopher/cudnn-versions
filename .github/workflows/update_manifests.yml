@@ -18,8 +18,8 @@ jobs:
       
       - name: Push changes to repository
         run: |
-          git config --local user.email me@shmish.dev
-          git config --local user.name "Christopher K. 'Shmish' Schmitt"
+          git config --local user.email github-actions@github.com
+          git config --local user.name github-actions
           git add .
           git commit -m "Add new cuDNN manifest"
           git push
